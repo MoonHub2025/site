@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Stando - #1 Best Da Hood Bot Scripts   -   </title>
+    <title>Stando - #1 Best Da Hood Bot Scripts</title>
     <link rel="icon" type="image/x-icon" href="/images/icon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -46,14 +46,23 @@
 
     <!-- Title Animation Script -->
     <script>
-      let txt = "Stando - #1 Best Da Hood Bot Scripts ";
-      let speed = 200; // smaller number = faster scroll
+      let txt = "Stando - #1 Best Da Hood Bot Scripts   "; // add spaces for smooth reset
+      let speed = 200; // typing speed
+      let pauseTime = 1500; // pause at full text (ms)
       let i = 0;
 
       function moveTitle() {
-        document.title = txt.substring(i) + txt.substring(0, i);
-        i = (i + 1) % txt.length;
-        setTimeout(moveTitle, speed);
+        if (i <= txt.length) {
+          document.title = txt.substring(i);
+          i++;
+          setTimeout(moveTitle, speed);
+        } else {
+          // Pause, then reset
+          setTimeout(() => {
+            i = 0;
+            moveTitle();
+          }, pauseTime);
+        }
       }
 
       moveTitle();
