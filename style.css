@@ -45,9 +45,11 @@
   position: relative;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* push content to top */
   justify-content: center;
+  padding-top: 80px; /* adjust this value to move up/down */
 }
+
 
 /* Centered logo block */
 .main .overlap-group {
@@ -221,3 +223,4 @@
 body {
   overflow: hidden;
 }
+
