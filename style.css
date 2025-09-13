@@ -61,7 +61,7 @@ body, html {
   text-align: center;
   line-height: 28px;
   color: #ffffff;
-  margin-top: -72px; /* move text up into logo */
+  margin-top: -72px;
 }
 
 .main .text-wrapper { color: #ffffff; }
@@ -79,7 +79,7 @@ body, html {
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
-  margin-top: 8px; /* closer to #1 text */
+  margin-top: 8px;
 }
 
 .main .button:hover {
@@ -121,10 +121,12 @@ body, html {
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
+  height: 200px; /* increase vertical height */
+  align-items: center; /* center buttons vertically */
 }
 
 .tutorials {
-  padding: 80px 20px;
+  padding: 200px 20px 80px 20px; /* pushes tutorials lower so only header shows */
   text-align: center;
 }
 
@@ -133,7 +135,7 @@ body, html {
   width: 100%;
   max-width: 700px;
   margin: 0 auto 50px auto;
-  padding-bottom: 29.25%;
+  padding-bottom: 19%; /* reduced height for rectangle */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
