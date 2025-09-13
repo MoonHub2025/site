@@ -25,53 +25,53 @@
 
 .floating {
   animation: float 4s ease-in-out infinite;
-  width: clamp(250px, 35vw, 550px); /* bigger size */
+  width: clamp(250px, 35vw, 550px);
   height: auto;
   object-fit: contain;
 }
 
 /* Main container */
-.coming-soon {
+.main {
   background-color: #22252d;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.coming-soon .div {
+.main .div {
   background-color: #22252d;
   width: 100%;
   height: 100vh;
   position: relative;
 
   display: flex;
-  align-items: center; /* vertical center */
-  justify-content: center; /* horizontal center */
+  align-items: center;
+  justify-content: center;
 }
 
 /* Centered logo block */
-.coming-soon .overlap-group {
+.main .overlap-group {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  z-index: 1; /* keep above floating images */
+  z-index: 1;
 }
 
-.coming-soon .group {
+.main .group {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
 
-.coming-soon .ROSTAKE {
+.main .ROSTAKE {
   width: 100%;
   max-width: 434px;
   height: auto;
 }
 
-.coming-soon .BOTTOM-TEXT {
+.main .BOTTOM-TEXT {
   font-family: "Onest", Helvetica;
   font-weight: 700;
   font-size: 18px;
@@ -79,37 +79,17 @@
   line-height: 28px;
 }
 
-.coming-soon .text-wrapper {
+.main .text-wrapper {
   color: #ffffff;
 }
 
-.coming-soon .span {
+.coming-soon .span, /* keep this pink style */
+.main .span {
   color: #f873ff;
 }
 
-/* TOP Coming Soon pill */
-.coming-soon .seach-input {
-  display: inline-flex;
-  height: 36px;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  padding: 4px 16px;
-  background-color: rgba(189, 59, 196, 0.25); /* transparent purple */
-  border-radius: 10px;
-}
-
-.coming-soon .name {
-  font-family: "Onest", Helvetica;
-  font-weight: 700;
-  color: #f873ff; /* pink text */
-  font-size: 16px;
-  line-height: 20px;
-  white-space: nowrap;
-}
-
-/* Bottom Discord button */
-.coming-soon .button {
+/* Discord button */
+.main .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
@@ -118,7 +98,7 @@
   margin-top: 11px;
   gap: 6px;
   padding: 10px 16px;
-  background-color: rgba(189, 59, 196, 0.7); /* purple with shading */
+  background-color: rgba(189, 59, 196, 0.7);
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
@@ -127,13 +107,13 @@
 .button:hover {
   opacity: 0.95;
   transform: scale(1.03);
-  background-color: rgba(189, 59, 196, 0.85); /* stronger purple on hover */
+  background-color: rgba(189, 59, 196, 0.85);
 }
 
-.coming-soon .text-wrapper-2 {
+.main .text-wrapper-2 {
   font-family: "Onest", Helvetica;
   font-weight: 700;
-  color: #ffffff; /* white text */
+  color: #ffffff;
   font-size: 14px;
   line-height: 20px;
 }
@@ -146,7 +126,7 @@
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 0px; /* smaller gap so they appear closer together */
+  gap: 0px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -241,4 +221,3 @@
 body {
   overflow: hidden;
 }
-
