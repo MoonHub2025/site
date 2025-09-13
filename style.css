@@ -107,12 +107,20 @@ body, html {
 .float-left { left: 5%; }
 .float-right { right: 5%; }
 
+.scripts-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  height: 200px;
+  justify-content: center;
+}
+
 .scripts-label {
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 0; /* moved label directly above buttons */
   text-align: center;
 }
 
@@ -121,12 +129,11 @@ body, html {
   gap: 15px;
   justify-content: center;
   flex-wrap: wrap;
-  height: 200px; /* increase vertical height */
-  align-items: center; /* center buttons vertically */
+  align-items: center;
 }
 
 .tutorials {
-  padding: 200px 20px 80px 20px; /* pushes tutorials lower so only header shows */
+  padding: 120px 20px 80px 20px; /* pushed tutorial headers higher */
   text-align: center;
 }
 
@@ -135,7 +142,7 @@ body, html {
   width: 100%;
   max-width: 700px;
   margin: 0 auto 50px auto;
-  padding-bottom: 19%; /* reduced height for rectangle */
+  padding-bottom: 19%; /* rectangle shape */
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -156,7 +163,7 @@ body, html {
   font-weight: 700;
   font-size: 24px;
   color: #ffffff;
-  margin: 40px 0 20px 0;
+  margin: 20px 0 20px 0; /* reduced top margin so header is more visible */
 }
 
 .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
