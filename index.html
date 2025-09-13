@@ -9,18 +9,16 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="coming-soon">
+    <div class="main">
       <div class="div">
         <!-- Left floating images -->
         <div class="float-left">
           <img class="floating" src="img/valk.png" alt="Valk Item" />
-          <img class="floating" src="img/pstf.png" alt="PSTF Item" />
         </div>
 
         <!-- Centered logo and text -->
         <div class="overlap-group">
           <div class="group">
-            <div class="seach-input"><div class="name">Coming Soon</div></div>
             <img class="ROSTAKE" src="img/logo.png" alt="RoStake Logo" />
             <p class="BOTTOM-TEXT">
               <span class="text-wrapper">THE </span>
@@ -39,7 +37,6 @@
         <!-- Right floating images -->
         <div class="float-right">
           <img class="floating" src="img/aureus.png" alt="Aureus Item" />
-          <img class="floating" src="img/bloxy.png" alt="Bloxy Item" />
         </div>
       </div>
     </div>
@@ -57,7 +54,6 @@
           i++;
           setTimeout(moveTitle, speed);
         } else {
-          // Pause, then reset
           setTimeout(() => {
             i = 0;
             moveTitle();
