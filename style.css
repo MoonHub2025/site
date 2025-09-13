@@ -61,27 +61,11 @@ body, html {
   text-align: center;
   line-height: 28px;
   color: #ffffff;
-  margin-top: 5px;
+  margin-top: -72px; /* move text up into logo */
 }
 
 .main .text-wrapper { color: #ffffff; }
 .main .span { color: #f873ff; }
-
-.scripts-label {
-  font-weight: 700;
-  font-size: 18px;
-  color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  text-align: center;
-}
-
-.scripts-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .main .button {
   all: unset;
@@ -95,6 +79,7 @@ body, html {
   border-radius: 8px;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  margin-top: 8px; /* closer to #1 text */
 }
 
 .main .button:hover {
@@ -121,6 +106,22 @@ body, html {
 
 .float-left { left: 5%; }
 .float-right { right: 5%; }
+
+.scripts-label {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.scripts-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
 .tutorials {
   padding: 80px 20px;
