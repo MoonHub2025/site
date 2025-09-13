@@ -21,21 +21,28 @@
   object-fit: contain;
 }
 
+/* Body and main background */
+body, html {
+  background-color: #22252d; /* consistent dark purple */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Onest", Helvetica;
+}
+
 /* Main Container */
 .main {
-  background-color: #22252d;
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
 .main .div {
-  background-color: #22252d;
   width: 100%;
   height: 100vh;
   position: relative;
   display: flex;
-  align-items: flex-start; /* move content toward top */
+  align-items: flex-start;
   justify-content: center;
   padding-top: 80px;
 }
@@ -63,17 +70,17 @@
 }
 
 .main .BOTTOM-TEXT {
-  font-family: "Onest", Helvetica;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
   line-height: 28px;
+  color: #ffffff;
 }
 
 .main .text-wrapper { color: #ffffff; }
 .main .span { color: #f873ff; }
 
-/* Buttons */
+/* Buttons - same style for all */
 .main .button {
   all: unset;
   box-sizing: border-box;
@@ -96,7 +103,6 @@
 }
 
 .main .text-wrapper-2 {
-  font-family: "Onest", Helvetica;
   font-weight: 700;
   color: #ffffff;
   font-size: 14px;
@@ -105,7 +111,6 @@
 
 /* Scripts label */
 .scripts-label {
-  font-family: "Onest", Helvetica;
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
@@ -143,59 +148,4 @@
 @media screen and (min-width: 2300px) { .float-left { left: 16%; } .float-right { right: 16%; } }
 @media screen and (min-width: 2500px) { .float-left { left: 18%; } .float-right { right: 18%; } }
 @media screen and (min-width: 2700px) { .float-left { left: 21%; } .float-right { right: 21%; } }
-@media screen and (min-width: 2900px) { .float-left { left: 24%; } .float-right { right: 24%; } }
-@media screen and (min-width: 3100px) { .float-left { left: 27%; } .float-right { right: 27%; } }
-
-/* Body overflow */
-body { overflow-x: hidden; }
-
-/* Tutorials Section */
-.tutorials {
-  background-color: #1b1e25;
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.tutorial-header {
-  font-family: "Onest", Helvetica;
-  font-weight: 700;
-  font-size: 24px;
-  color: #f873ff;
-  margin: 40px 0 20px 0;
-}
-
-/* Responsive Video Embed */
-.video-container {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 0 auto 50px auto;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.4);
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 12px;
-}
-
-/* Footer */
-.footer {
-  background-color: #111318;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer p {
-  font-family: "Onest", Helvetica;
-  font-size: 14px;
-  color: #aaaaaa;
-}
+@media screen and
