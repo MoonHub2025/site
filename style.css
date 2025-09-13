@@ -108,7 +108,7 @@
   white-space: nowrap;
 }
 
-/* Discord button (unchanged) */
+/* Bottom Discord button */
 .coming-soon .button {
   all: unset;
   box-sizing: border-box;
@@ -118,22 +118,22 @@
   margin-top: 11px;
   gap: 6px;
   padding: 10px 16px;
-  background-color: #88ff55;
+  background-color: rgba(189, 59, 196, 0.7); /* purple with shading */
   border-radius: 8px;
-  box-shadow: inset 0px 2px 0px #caffb3, inset 0px -2px 0px #5eb639;
   cursor: pointer;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
 }
 
 .button:hover {
-  opacity: 0.9;
-  transform: scale(1.02);
+  opacity: 0.95;
+  transform: scale(1.03);
+  background-color: rgba(189, 59, 196, 0.85); /* stronger purple on hover */
 }
 
 .coming-soon .text-wrapper-2 {
   font-family: "Onest", Helvetica;
   font-weight: 700;
-  color: #1c2025;
+  color: #ffffff; /* white text */
   font-size: 14px;
   line-height: 20px;
 }
