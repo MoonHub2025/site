@@ -26,11 +26,7 @@ body, html {
   font-family: "Onest", Helvetica;
 }
 
-.main {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
+.main { display: flex; justify-content: center; width: 100%; }
 
 .main .div {
   width: 100%;
@@ -54,14 +50,10 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
-.main .ROSTAKE {
-  width: 100%;
-  max-width: 434px;
-  height: auto;
-}
+.main .ROSTAKE { width: 100%; max-width: 434px; height: auto; }
 
 .main .BOTTOM-TEXT {
   font-weight: 700;
@@ -74,13 +66,37 @@ body, html {
 .main .text-wrapper { color: #ffffff; }
 .main .span { color: #f873ff; }
 
+.image-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.image-button img { width: 180px; height: auto; border-radius: 8px; }
+
+.scripts-label {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.scripts-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .main .button {
   all: unset;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 11px;
   gap: 6px;
   padding: 10px 16px;
   background-color: rgba(189, 59, 196, 0.7);
@@ -102,24 +118,7 @@ body, html {
   line-height: 20px;
 }
 
-.scripts-label {
-  font-weight: 700;
-  font-size: 18px;
-  color: #ffffff;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.scripts-buttons {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.float-left,
-.float-right {
+.float-left, .float-right {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -131,16 +130,6 @@ body, html {
 .float-left { left: 5%; }
 .float-right { right: 5%; }
 
-@media screen and (min-width: 1600px) { .float-left { left: 7%; } .float-right { right: 7%; } }
-@media screen and (min-width: 1750px) { .float-left { left: 9%; } .float-right { right: 9%; } }
-@media screen and (min-width: 1950px) { .float-left { left: 12%; } .float-right { right: 12%; } }
-@media screen and (min-width: 2100px) { .float-left { left: 14%; } .float-right { right: 14%; } }
-@media screen and (min-width: 2300px) { .float-left { left: 16%; } .float-right { right: 16%; } }
-@media screen and (min-width: 2500px) { .float-left { left: 18%; } .float-right { right: 18%; } }
-@media screen and (min-width: 2700px) { .float-left { left: 21%; } .float-right { right: 21%; } }
-@media screen and (min-width: 2900px) { .float-left { left: 24%; } .float-right { right: 24%; } }
-@media screen and (min-width: 3100px) { .float-left { left: 27%; } .float-right { right: 27%; } }
-
 .tutorials {
   padding: 80px 20px;
   text-align: center;
@@ -151,7 +140,7 @@ body, html {
   width: 100%;
   max-width: 700px;
   margin: 0 auto 50px auto;
-  padding-bottom: 29.25%; /* 65% of original 45% */
+  padding-bottom: 29.25%;
   height: 0;
   overflow: hidden;
   border-radius: 12px;
