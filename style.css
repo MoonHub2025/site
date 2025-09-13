@@ -9,11 +9,8 @@
 @font-face {
   font-family: "Onest";
   src: url("fonts/Onest-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
 }
 
-/* Floating Images */
 .floating {
   animation: float 4s ease-in-out infinite;
   width: clamp(250px, 35vw, 550px);
@@ -21,16 +18,14 @@
   object-fit: contain;
 }
 
-/* Body and main background */
 body, html {
-  background-color: #22252d; /* consistent dark purple */
+  background-color: #22252d;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   font-family: "Onest", Helvetica;
 }
 
-/* Main Container */
 .main {
   display: flex;
   justify-content: center;
@@ -39,15 +34,14 @@ body, html {
 
 .main .div {
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   padding-top: 80px;
+  padding-bottom: 60px;
 }
 
-/* Centered logo and content */
 .main .overlap-group {
   display: flex;
   flex-direction: column;
@@ -80,7 +74,6 @@ body, html {
 .main .text-wrapper { color: #ffffff; }
 .main .span { color: #f873ff; }
 
-/* Buttons - same style for all */
 .main .button {
   all: unset;
   box-sizing: border-box;
@@ -109,24 +102,22 @@ body, html {
   line-height: 20px;
 }
 
-/* Scripts label */
 .scripts-label {
   font-weight: 700;
   font-size: 18px;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
   text-align: center;
 }
 
-/* Script buttons row */
 .scripts-buttons {
   display: flex;
   gap: 15px;
-  margin-top: 10px;
+  margin-top: 0;
   justify-content: center;
 }
 
-/* Floating image containers */
 .float-left,
 .float-right {
   position: absolute;
@@ -134,13 +125,12 @@ body, html {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 0;
 }
 
 .float-left { left: 5%; }
 .float-right { right: 5%; }
 
-/* Media queries for large screens */
 @media screen and (min-width: 1600px) { .float-left { left: 7%; } .float-right { right: 7%; } }
 @media screen and (min-width: 1750px) { .float-left { left: 9%; } .float-right { right: 9%; } }
 @media screen and (min-width: 1950px) { .float-left { left: 12%; } .float-right { right: 12%; } }
@@ -151,19 +141,17 @@ body, html {
 @media screen and (min-width: 2900px) { .float-left { left: 24%; } .float-right { right: 24%; } }
 @media screen and (min-width: 3100px) { .float-left { left: 27%; } .float-right { right: 27%; } }
 
-/* Tutorials Section */
 .tutorials {
   padding: 80px 20px;
   text-align: center;
 }
 
-/* Video container - shorter rectangle */
 .video-container {
   position: relative;
   width: 100%;
   max-width: 700px;
   margin: 0 auto 50px auto;
-  padding-bottom: 45%; /* shorter rectangle */
+  padding-bottom: 45%;
   height: 0;
   overflow: hidden;
   border-radius: 12px;
@@ -180,7 +168,6 @@ body, html {
   border-radius: 12px;
 }
 
-/* Tutorial headers */
 .tutorial-header {
   font-weight: 700;
   font-size: 24px;
@@ -188,11 +175,9 @@ body, html {
   margin: 40px 0 20px 0;
 }
 
-/* Scroll fade-in */
 .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
 .fade-in.visible { opacity: 1; transform: translateY(0); }
 
-/* Footer */
 .footer {
   background-color: #111318;
   padding: 20px;
