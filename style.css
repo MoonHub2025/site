@@ -130,11 +130,11 @@ body, html {
 
 
 .float-left {
-  left: 15%;
+  left: 25%;
 }
 
 .float-right {
-  right: 15%;
+  right: 25%;
 }
 
 /* === Glows === */
@@ -157,6 +157,7 @@ body, html {
 .glow-dark {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
 }
+
 
 
 
