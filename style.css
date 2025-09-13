@@ -125,7 +125,7 @@ body, html {
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 100px; /* 👈 CURRENT VALUE */
+  gap: 80px; /* 👈 CURRENT VALUE */
 }
 
 
@@ -157,6 +157,7 @@ body, html {
 .glow-dark {
   filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.6));
 }
+
 
 
 
