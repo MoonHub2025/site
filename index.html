@@ -1,96 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Stando - #1 Best Da Hood Bot Scripts</title>
-    <link rel="icon" type="image/x-icon" href="/images/icon.ico" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="div">
-        <!-- Left floating image -->
-        <div class="float-left">
-          <img class="floating" src="img/valk.png" alt="Valk Item" />
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stando - #1 Best Da Hood Bot Scripts</title>
+  <link rel="icon" type="image/x-icon" href="/images/icon.ico" />
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="main">
+    <div class="div">
+      <!-- Left floating image -->
+      <div class="float-left">
+        <img class="floating" src="img/valk.png" alt="Valk Item" />
+      </div>
 
-        <!-- Centered logo and content -->
-        <div class="overlap-group">
-          <div class="group">
-            <img class="ROSTAKE" src="img/logo.png" alt="RoStake Logo" />
-            <p class="BOTTOM-TEXT">
-              <span class="text-wrapper">THE </span>
-              <span class="span">#1</span>
-              <span class="text-wrapper"> DA HOOD BOT SCRIPT PROVIDER</span>
-            </p>
+      <!-- Centered logo and content -->
+      <div class="overlap-group">
+        <div class="group">
+          <img class="ROSTAKE" src="img/logo.png" alt="RoStake Logo" />
+          <p class="BOTTOM-TEXT">
+            <span class="text-wrapper">THE </span>
+            <span class="span">#1</span>
+            <span class="text-wrapper"> DA HOOD BOT SCRIPT PROVIDER</span>
+          </p>
 
-            <!-- Discord Button -->
-            <button class="button" onclick="location.href='https://discord.gg/stando';">
-              <div class="text-wrapper-2">Join Official Discord Server</div>
+          <!-- Discord Button -->
+          <button class="button" onclick="location.href='https://discord.gg/stando';">
+            <div class="text-wrapper-2">Join Official Discord Server</div>
+          </button>
+
+          <!-- Scripts Label -->
+          <p class="scripts-label">Scripts:</p>
+
+          <!-- Script Buttons -->
+          <div class="scripts-buttons">
+            <button class="button" onclick="location.href='LINK_TO_STAND_SCRIPT';">
+              <div class="text-wrapper-2">Stand Script</div>
             </button>
-
-            <!-- Scripts Label -->
-            <p class="scripts-label">Scripts:</p>
-
-            <!-- Script Buttons -->
-            <div class="scripts-buttons">
-              <button class="button" onclick="window.open('LINK_TO_STAND_SCRIPT','_blank')">Stand Script</button>
-              <button class="button" onclick="window.open('LINK_TO_SNIPER_SCRIPT','_blank')">Sniper Script</button>
-              <button class="button" onclick="window.open('LINK_TO_XK5NG_GUI','_blank')">xk5ng Gui</button>
-            </div>
+            <button class="button" onclick="location.href='LINK_TO_SNIPER_SCRIPT';">
+              <div class="text-wrapper-2">Sniper Script</div>
+            </button>
+            <button class="button" onclick="location.href='LINK_TO_XK5NG_GUI';">
+              <div class="text-wrapper-2">xk5ng Gui</div>
+            </button>
           </div>
         </div>
+      </div>
 
-        <!-- Right floating image -->
-        <div class="float-right">
-          <img class="floating" src="img/aureus.png" alt="Aureus Item" />
-        </div>
+      <!-- Right floating image -->
+      <div class="float-right">
+        <img class="floating" src="img/aureus.png" alt="Aureus Item" />
       </div>
     </div>
+  </div>
 
-    <!-- Tutorials Section -->
-    <div class="tutorials">
-      <h2 class="tutorial-header">Stand Tutorial</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Stand Tutorial" allowfullscreen></iframe>
-      </div>
-
-      <h2 class="tutorial-header">Sniper Tutorial</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Sniper Tutorial" allowfullscreen></iframe>
-      </div>
-
-      <h2 class="tutorial-header">xk5ng Gui Showcase</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="xk5ng Gui Showcase" allowfullscreen></iframe>
-      </div>
+  <!-- Tutorials Section -->
+  <div class="tutorials">
+    <h2 id="stand-tutorial" class="tutorial-header fade-in">Stand Tutorial</h2>
+    <div class="video-container fade-in">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Stand Tutorial" allowfullscreen></iframe>
     </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>© Stando 2025. All rights reserved.</p>
-    </footer>
+    <h2 id="sniper-tutorial" class="tutorial-header fade-in">Sniper Tutorial</h2>
+    <div class="video-container fade-in">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Sniper Tutorial" allowfullscreen></iframe>
+    </div>
 
-    <!-- Title Animation Script -->
-    <script>
-      let txt = "Stando - #1 Best Da Hood Bot Scripts   ";
-      let speed = 200;
-      let pauseTime = 1500;
-      let i = 0;
+    <h2 id="xk5ng-tutorial" class="tutorial-header fade-in">xk5ng Gui Showcase</h2>
+    <div class="video-container fade-in">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="xk5ng Gui Showcase" allowfullscreen></iframe>
+    </div>
+  </div>
 
-      function moveTitle() {
-        if (i <= txt.length) {
-          document.title = txt.substring(i);
-          i++;
-          setTimeout(moveTitle, speed);
-        } else {
-          setTimeout(() => { i = 0; moveTitle(); }, pauseTime);
-        }
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© Stando 2025. All rights reserved.</p>
+  </footer>
+
+  <!-- Title Animation Script -->
+  <script>
+    let txt = "Stando - #1 Best Da Hood Bot Scripts   ";
+    let speed = 200;
+    let pauseTime = 1500;
+    let i = 0;
+
+    function moveTitle() {
+      if (i <= txt.length) {
+        document.title = txt.substring(i);
+        i++;
+        setTimeout(moveTitle, speed);
+      } else {
+        setTimeout(() => { i = 0; moveTitle(); }, pauseTime);
       }
+    }
+    moveTitle();
+  </script>
 
-      moveTitle();
-    </script>
-  </body>
+  <!-- Scroll Fade-in Script -->
+  <script>
+    function handleScrollFade() {
+      const elements = document.querySelectorAll('.fade-in');
+      const windowBottom = window.innerHeight;
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < windowBottom - 50) {
+          el.classList.add('visible');
+        }
+      });
+    }
+    window.addEventListener('scroll', handleScrollFade);
+    window.addEventListener('load', handleScrollFade);
+  </script>
+</body>
 </html>
