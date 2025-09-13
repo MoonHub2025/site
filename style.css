@@ -148,4 +148,58 @@ body, html {
 @media screen and (min-width: 2300px) { .float-left { left: 16%; } .float-right { right: 16%; } }
 @media screen and (min-width: 2500px) { .float-left { left: 18%; } .float-right { right: 18%; } }
 @media screen and (min-width: 2700px) { .float-left { left: 21%; } .float-right { right: 21%; } }
-@media screen and
+@media screen and (min-width: 2900px) { .float-left { left: 24%; } .float-right { right: 24%; } }
+@media screen and (min-width: 3100px) { .float-left { left: 27%; } .float-right { right: 27%; } }
+
+/* Tutorials Section */
+.tutorials {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* Video container - shorter rectangle */
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  padding-bottom: 45%; /* shorter rectangle */
+  height: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+}
+
+/* Tutorial headers */
+.tutorial-header {
+  font-weight: 700;
+  font-size: 24px;
+  color: #f873ff;
+  margin: 40px 0 20px 0;
+}
+
+/* Scroll fade-in */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* Footer */
+.footer {
+  background-color: #111318;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #aaaaaa;
+}
