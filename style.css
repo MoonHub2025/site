@@ -87,6 +87,7 @@
   color: #88ff55;
 }
 
+/* TOP Coming Soon pill */
 .coming-soon .seach-input {
   display: inline-flex;
   height: 36px;
@@ -94,20 +95,20 @@
   justify-content: center;
   gap: 8px;
   padding: 4px 16px;
-  background-color: #88ff551a;
+  background-color: rgba(189, 59, 196, 0.25); /* transparent purple */
   border-radius: 10px;
 }
 
 .coming-soon .name {
   font-family: "Onest", Helvetica;
   font-weight: 700;
-  color: #88ff55;
+  color: #f873ff; /* pink text */
   font-size: 16px;
   line-height: 20px;
   white-space: nowrap;
 }
 
-/* UPDATED BUTTON */
+/* Discord button (unchanged) */
 .coming-soon .button {
   all: unset;
   box-sizing: border-box;
@@ -117,9 +118,9 @@
   margin-top: 11px;
   gap: 6px;
   padding: 10px 16px;
-  background-color: #bd3bc4; /* new background */
+  background-color: #88ff55;
   border-radius: 8px;
-  box-shadow: inset 0px 2px 0px #d56bdc, inset 0px -2px 0px #8a2b90;
+  box-shadow: inset 0px 2px 0px #caffb3, inset 0px -2px 0px #5eb639;
   cursor: pointer;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
@@ -132,7 +133,7 @@
 .coming-soon .text-wrapper-2 {
   font-family: "Onest", Helvetica;
   font-weight: 700;
-  color: #f873ff; /* new text color */
+  color: #1c2025;
   font-size: 14px;
   line-height: 20px;
 }
