@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Stando - #1 Best Da Hood Bot Scripts</title>
     <link rel="icon" type="image/x-icon" href="/images/icon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="main">
       <div class="div">
-        <!-- Left floating images -->
+        <!-- Left floating image -->
         <div class="float-left">
           <img class="floating" src="img/valk.png" alt="Valk Item" />
         </div>
 
-        <!-- Centered logo and text -->
+        <!-- Centered logo and content -->
         <div class="overlap-group">
           <div class="group">
             <img class="ROSTAKE" src="img/logo.png" alt="RoStake Logo" />
@@ -25,27 +25,59 @@
               <span class="span">#1</span>
               <span class="text-wrapper"> DA HOOD BOT SCRIPT PROVIDER</span>
             </p>
-            <button
-              class="button"
-              onclick="location.href = 'https://discord.gg/stando';"
-            >
+
+            <!-- Discord Button -->
+            <button class="button" onclick="location.href='https://discord.gg/stando';">
               <div class="text-wrapper-2">Join Official Discord Server</div>
             </button>
+
+            <!-- Scripts Label -->
+            <p class="scripts-label">Scripts:</p>
+
+            <!-- Script Buttons -->
+            <div class="scripts-buttons">
+              <button class="button" onclick="window.open('LINK_TO_STAND_SCRIPT','_blank')">Stand Script</button>
+              <button class="button" onclick="window.open('LINK_TO_SNIPER_SCRIPT','_blank')">Sniper Script</button>
+              <button class="button" onclick="window.open('LINK_TO_XK5NG_GUI','_blank')">xk5ng Gui</button>
+            </div>
           </div>
         </div>
 
-        <!-- Right floating images -->
+        <!-- Right floating image -->
         <div class="float-right">
           <img class="floating" src="img/aureus.png" alt="Aureus Item" />
         </div>
       </div>
     </div>
 
+    <!-- Tutorials Section -->
+    <div class="tutorials">
+      <h2 class="tutorial-header">Stand Tutorial</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" title="Stand Tutorial" allowfullscreen></iframe>
+      </div>
+
+      <h2 class="tutorial-header">Sniper Tutorial</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" title="Sniper Tutorial" allowfullscreen></iframe>
+      </div>
+
+      <h2 class="tutorial-header">xk5ng Gui Showcase</h2>
+      <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" title="xk5ng Gui Showcase" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© Stando 2025. All rights reserved.</p>
+    </footer>
+
     <!-- Title Animation Script -->
     <script>
-      let txt = "Stando - #1 Best Da Hood Bot Scripts   "; // add spaces for smooth reset
-      let speed = 200; // typing speed
-      let pauseTime = 1500; // pause at full text (ms)
+      let txt = "Stando - #1 Best Da Hood Bot Scripts   ";
+      let speed = 200;
+      let pauseTime = 1500;
       let i = 0;
 
       function moveTitle() {
@@ -54,10 +86,7 @@
           i++;
           setTimeout(moveTitle, speed);
         } else {
-          setTimeout(() => {
-            i = 0;
-            moveTitle();
-          }, pauseTime);
+          setTimeout(() => { i = 0; moveTitle(); }, pauseTime);
         }
       }
 
